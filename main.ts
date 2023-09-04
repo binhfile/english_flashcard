@@ -26,7 +26,7 @@ word_index = 0
 word_count = text_list.length
 basic.forever(function () {
     if (input.logoIsPressed() || (input.buttonIsPressed(Button.A) || input.buttonIsPressed(Button.B))) {
-        music.play(music.tonePlayable(659, music.beat(BeatFraction.Quarter)), music.PlaybackMode.UntilDone)
+        music.play(music.tonePlayable(784, music.beat(BeatFraction.Sixteenth)), music.PlaybackMode.UntilDone)
         basic.showString("" + (text_list[word_index]))
         basic.clearScreen()
     }
