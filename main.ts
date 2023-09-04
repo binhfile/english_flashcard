@@ -24,6 +24,9 @@ let text_list = [
 ]
 word_index = 0
 word_count = text_list.length
+basic.showIcon(IconNames.Heart)
+basic.pause(1000)
+basic.clearScreen()
 basic.forever(function () {
     if (input.logoIsPressed() || (input.buttonIsPressed(Button.A) || input.buttonIsPressed(Button.B))) {
         music.play(music.tonePlayable(784, music.beat(BeatFraction.Sixteenth)), music.PlaybackMode.UntilDone)
